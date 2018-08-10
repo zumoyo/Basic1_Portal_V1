@@ -1,0 +1,84 @@
+/*
+	Copyright (C) 2013
+	No part of this file may be used without permission.
+ */
+
+body, p, h1, h2, h3, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+	text-align: center;
+}
+img {
+	border: 0;
+}
+input {
+	border: 1px solid #ACACAC;
+}
+.fieldtable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+.txtField {
+	background-color: #FBFBFB;
+	width: 128px;
+}
+#wrapper {
+	margin-top: 0px;
+	width: 720px;
+	background: #FFF;
+}
+#topLogo {
+	height: 72px;
+	background-color: #FFFFFF;
+}
+#content {
+	text-align: left;
+	padding-bottom: 6px;
+}
+#content #leftLogo {
+	float: left;
+	margin: 0 6px 6px 0;
+}
+#content h1,#content h2,#content h3{
+	margin-top: 12px;
+	margin-left: 6px;
+	font-size: 14px;
+}
+#content hr {
+	height: 1px;
+	margin-left: 3px;
+}
+#content p {
+	margin-left: 16px;
+}
+#usagebar {
+	text-align: left;
+	border-top: solid 1px #666;
+	vertical-align: middle;
+}
+#formbar {
+	text-align: right;
+	border-top: solid 1px #666;
+	padding: 3px;
+	background-image: url(images/reddot.gif);
+	vertical-align: middle;
+}
+#formbarText {
+	float: left;
+	font-style: italic;
+	margin-left: 6px;
+	text-align: left;
+}
+#footer {
+	color: #FFF;
+	border-top: 1px solid #666;
+	clear: both;
+	font-size: 10px;
+	background-color: #F00;
+}

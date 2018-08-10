@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html> 
+<!--
+	Copyright (C) 2013
+	No part of this file may be used without permission.
+-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>%title</title>
+	<link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+	<script type="text/javascript" src="script/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="script/materialize.min.js"></script>
+	<script type="text/javascript">
+	<!--
+	function initialize() {
+		var txtObj = document.getElementById('txtLogin');
+		if (txtObj.value.length != 0) {
+			var chkObj = document.getElementById('chkRemember');
+			var pwdObj = document.getElementById('txtPasswd');
+			chkObj.checked = true;
+			pwdObj.focus();
+		} else {
+			txtObj.focus();
+		}
+	}
+
+	function goCheck() {
+		var reqForm = document.forms[0];
+		var reqCheck = document.getElementById('reqCheck');
+		reqCheck.value = "true";
+		reqForm.submit();
+	}
+
+	function goUsage() {
+			location.assign('/user');
+	}
+	//-->
+	</script>
+	<style>
+	    body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+
+        main {
+          flex: 1 0 auto;
+        }
+		.checkbox-black[type="checkbox"].filled-in:checked + label:after{
+     		border: 2px solid black;
+     		background-color: black;
+		}        
+	</style>
+</head>
+<body background="images/1366x768_Novotel_ENG_Ecran-reception-n_01.jpg" class="responsive-img"  style="background-image: url(images/1366x768_Novotel_ENG_Ecran-reception-n_01.jpg)">
+       <div class="container" >
+          <div class="row valign-wrapper" style="height:100vh">        
+          	<div style="valign;padding:30px;border-radius:5px;" class="z-depth-3 hoverable col l4 offset-l4 s12 #78909c blue-grey lighten-1 white-text">
+          		<div class="row">
+						
+					<form  method="post" enctype="application/x-www-form-urlencoded" action="%authproto://%authaddr/portal/user-authen.php">
+
+						<div class="row">
+							<div class="center-align col l12 s12">
+								<img class="responsive-img" src="images/Novotel_logo-white-transparent.png">
+							</div>
+						</div>
+
+		<div class="input-field col l10 offset-l1 s12 m12">
+					<input class="center-align" placeholder="Username" id="txtLogin" name="txtLogin" maxlength="24" type="text" value="%login">
+							<label for="username">Username</label>
+						</div>
+
+		<div class="input-field col l10 offset-l1 s12 m12">
+					<input class="center-align" name="txtPasswd" placeholder="Password" id="txtPasswd" type="password" maxlength="24" value="%passwd"> 
+							<label for="password">Password</label>
+						</div>
+						<br>
+
+		<p class="center-align">
+					<input type="checkbox" name="chkRemember" value="1" class="filled-in checkbox-black" id="chkRemember" checked="checked" />
+					<label for="chkRemember">Remember me</label>
+						</p>
+
+		<div class="row">
+		<div class="col l10 offset-l1 s12 m12 center-align">
+					<button style="width:100%" class="white-text" 
+					type="submit" onsubmit="this.disabled=true" id="btnLogin" value="Login" name="btnLogin">Login
+								</button>
+							</div>
+						</div>
+
+						<input name="reqUrl" type="hidden" class="hide" id="reqUrl" value="%requrl" />
+						<input name="reqCheck" type="hidden" class="hide" id="reqCheck" value="false" />
+                </form>
+                </div>
+                <div class="row">
+					<div class="center-align col l12 s12">
+			 <h5 align="center" class="card-title">Premium access</h5>
+          <p>• 20 Mbps for 1 Day at THB. 100
+          <p>• 30 Mbps for 1 Day at THB. 150</p>
+                          </div>
+                          <div class="row">
+					<div class="center-align col l12 s12">
+			          <h6 class="card-title">Buy ticket at Reception</h6>
+				    </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

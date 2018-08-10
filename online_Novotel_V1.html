@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!--
+	Copyright (C) 2013
+	No part of this file may be used without permission.
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<title>%title :: Logout status</title>
+<link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="script/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="script/materialize.min.js"></script>
+	<script type="text/javascript">
+var autoclose = "%reqclose";
+<!--
+function focus() {
+	if (autoclose == "true") {
+		closeWn();
+	}
+	var btnObj = document.getElementById('btnRelog');
+	btnObj.focus();
+}
+
+function closeWn() {
+	window.opener = self;
+if (window.opener == null) {
+	window.open('','_parent','');
+}
+	window.close(); 
+}
+//-->
+</script>
+</head>
+<body onload="javascript:focus();">
+<body background="images/1366x768_Novotel_ENG_Ecran-reception-n_01.jpg" class="responsive-img"  style="background-image: url(images/1366x768_Novotel_ENG_Ecran-reception-n_01.jpg)">
+    <div class="container" >
+        <div class="row valign-wrapper" style="height:100vh">        
+          	<div style="valign;padding:30px;border-radius:5px;" class="z-depth-3 hoverable col l4 offset-l4 s12 #78909c blue-grey lighten-1 white-text">
+          		<div class="row">
+						<div class="row">
+							<div class="center-align col l12 s12">
+								<img class="responsive-img" src="images/Novotel_logo-white-transparent.png">
+							</div>
+						</div>
+						<div class="row">		
+							<h6 class="center-align">You are currently online</h6>
+							<br>						
+						</div>
+						<div class="row">		
+							<h6 class="center-align">%message</h6>
+							<br>						
+						</div>
+								
+				</div>
+
+				<div class="row" align="center" id="formbar">
+					<div>
+					<input name="btnCont" class="black btn btn-block btn-large" type="button" id="btnCont" value="Continue" onclick="javascript:go();"/> 
+                    </div>
+                </div>
+      <div class="row" align="center" id="formbar">
+					<div>              
+	<input name="btnLogout" class="black btn btn-block btn-large" type="button" id="btnLogout" value="Logout" onclick="javascript:location.replace('user-authen.php?logout=%challenge');"/><br />
+					</div>
+    <div class="row" align="center" id="formbar">
+					<div>
+       				<input name="btnClose" class="black btn btn-block btn-large" type="button" id="btnClose" value="Close" onclick="javascript:closeWn();"/>
+                    </div>													
+				
+						
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
+
